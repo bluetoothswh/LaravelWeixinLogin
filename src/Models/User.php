@@ -36,7 +36,7 @@ class User extends Authenticatable
 
     			'username' 			=> $info->nickname,
     			'email'	   			=> 'weixin-'.str_random(5).'@larashuo.com',
-    			'phone'	   			=> '10000000000',
+    			'phone'	   			=> '1000000'.rand(1000,9999),
     			'password' 			=> Hash::make(str_random(6)),
     			'ip'	   			=> request()->ip(),
     			'register_time' 	=> time(),
