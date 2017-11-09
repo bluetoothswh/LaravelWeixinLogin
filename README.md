@@ -18,7 +18,7 @@ php artisan vendor:publish
 return [
 		'appid'			=>env('weixin_appid'),
 		'secret'		=>env('weixin_secret'),
-		'callback_url'	=>env('weixin_callback_url'),
+		'callback_url'	        =>env('weixin_callback_url'),
 ];
 
 //然后可以在.env文件中添加如下数据
@@ -62,12 +62,25 @@ public function callback()
 
 //获取用户的相关信息
 
+//获取openid
 $user->openid;
+
+获取nickname
 $user->nickname;
+
+//获取性别
 $user->sex;
+
+//获取城市
 $user->city;
+
+//获取省会
 $user->province;
+
+//获取国家
 $user->country;
+
+//获取用户头像
 $user->headimgurl;
 
 
