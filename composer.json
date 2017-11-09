@@ -1,0 +1,35 @@
+{
+    "name": "laramall/laravel-weixin-login",
+    "type": "package",
+    "description": "基于laravel5.5的 微信公众号登录",
+    "keywords": ["laravel5.5", "wechat auth login", "微信公众号登录laravel"],
+    "homepage": "https://github.com/bluetoothswh/LaravelWeixinLogin.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Sun",
+            "email": "bluetooth_swh@163.com",
+            "homepage": "https://larashuo.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaraMall\\Weixin\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+     "extra": {
+        "laravel": {
+            "providers": [
+                "LaraMall\\Weixin\\WeixinServiceProvider"
+            ],
+            "aliases": {
+                "Menu": "LaraMall\\Weixin\\Facades\\Weixin"
+            }
+        }
+    }
+}
